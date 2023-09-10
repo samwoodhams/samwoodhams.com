@@ -24,7 +24,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="relative mx-auto bg-gradient-to-b from-slate-300 to-slate-400 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image className="disable-blur" src={face} layout="fill" objectFit="cover" alt="male face" unoptimized="true"/>
+            <Image className="disable-blur object-cover w-full h-full" src={face} alt="male face" unoptimized/>
           </div>
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-slate-700 font-medium md:text-6xl dark:text-white">Samuel Woodhams</h2>
