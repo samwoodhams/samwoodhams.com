@@ -29,12 +29,12 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="relative mx-auto bg-gradient-to-b from-slate-300 to-slate-400 rounded-full w-80 h-80 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-slate-300 to-slate-400 rounded-full w-3/4 flex-initial overflow-hidden md:w-1/4 lg:w-1/5">
             <Image className="disable-blur object-cover w-full h-full" src={face} alt="male face" unoptimized/>
           </div>
-          <div className="text-center md:p-10">
-            <h2 className="text-5xl py-2 text-slate-600 font-medium md:text-6xl dark:text-teal-400">Samuel Woodhams</h2>
-            <TypeMe className="text-2xl py-2 md:text-3xl dark:text-slate-300"
+          <div className="text-center p-10">
+            <h2 className="text-4xl py-2 text-slate-600 font-medium md:text-6xl dark:text-teal-400">Samuel Woodhams</h2>
+            <TypeMe className="text-xl py-2 md:text-3xl dark:text-slate-300"
               typingSpeed="200"
               loop
               backspaceDelay="1500"
