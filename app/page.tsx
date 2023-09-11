@@ -149,7 +149,7 @@ export default function Home() {
         <section>
           <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-20 py-3 dark:text-teal-500">
             <div className="underline  cursor-pointer">
-              <a href="#">
+              <a className="px-2 underline cursor-pointer" href="#">
                 Home
               </a>
             </div>
