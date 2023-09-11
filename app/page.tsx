@@ -18,7 +18,7 @@ export default function Home() {
               <li>
                 <div>
                 <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:hidden"/>
-                <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:md:block"/>
+                <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:block"/>
                 </div>
               </li>
             </ul>
