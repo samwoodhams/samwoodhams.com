@@ -1,10 +1,12 @@
 "use client"
 
+import React from 'react'
+import TypeMe, { Delete, Delay } from 'react-typeme'
 import Image from 'next/image'
 import face from '../public/face.png'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useState } from "react"
+import { useState } from 'react'
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -25,17 +27,29 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div className="justify-center">
-            <div className="relative mx-auto bg-gradient-to-b from-slate-300 to-slate-400 rounded-full w-80 h-80 overflow-hidden">
-              <Image className="disable-blur object-cover w-full h-full" src={face} alt="male face" unoptimized/>
-            </div>
-            <div className="text-center p-10">
-              <h2 className="text-5xl py-2 text-slate-600 font-medium md:text-6xl dark:text-teal-400">Samuel Woodhams</h2>
-              <h3 className="text-2xl py-2 md:text-3xl dark:text-slate-300">Computer Science Student</h3>
-              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-slate-300">
-                An undergraduate student currently studying computer science at the University of Warwick.
-              </p>
-            </div>
+          <div className="relative mx-auto bg-gradient-to-b from-slate-300 to-slate-400 rounded-full w-80 h-80 overflow-hidden">
+            <Image className="disable-blur object-cover w-full h-full" src={face} alt="male face" unoptimized/>
+          </div>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-slate-600 font-medium md:text-6xl dark:text-teal-400">Samuel Woodhams</h2>
+            <TypeMe className="text-2xl py-2 md:text-3xl dark:text-slate-300"
+              typingSpeed="200"
+              loop
+              backspaceDelay="1500"
+              strings={[
+                'Computer Science Student',
+                <Delete />,
+                'Cybersecurity Enthusiast',
+                <Delete />,
+                'Developer',
+                <Delete />,
+                'Nerd',
+                <Delete />,
+              ]}
+            />
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-slate-300">
+              An undergraduate student currently studying computer science at the University of Warwick.
+            </p>
           </div>
         </section>
 
