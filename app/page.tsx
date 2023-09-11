@@ -94,27 +94,48 @@ export default function Home() {
 
         <section>
           <div>
-          <h3 className="text-3xl py-1 text-slate-600 dark:text-white">Portfolio</h3>
-          <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
-              A list of some of the <span className="text-teal-500">cool</span> and <span className="text-teal-500">exciting</span> things that I&apos;ve been working on.
-          </p>
+            <h3 className="text-3xl py-1 text-slate-600 dark:text-white">Portfolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
+                A list of some of the <span className="text-teal-500">cool</span> and <span className="text-teal-500">exciting</span> things that I&apos;ve been working on.
+            </p>
           </div>
-          <div className="basis-1/3 gap-10 flex flex-wrap mb-20">
-            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
+          <div className="gap-10 flex flex-wrap my-10 justify-center">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
+              <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
+              <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
+                <BsGithub className="cursor-pointer"/>
+              </a>
+              <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
+              <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
+              <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
+                <BsGithub className="cursor-pointer"/>
+              </a>
+              <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
+              <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
+              <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
+                <BsGithub className="cursor-pointer"/>
+              </a>
+              <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
