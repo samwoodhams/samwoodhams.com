@@ -9,7 +9,6 @@ import { BiLogoGmail } from 'react-icons/bi'
 import { useState } from 'react'
 
 
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
   return (
@@ -23,8 +22,8 @@ export default function Home() {
             <ul className="flex items-center dark:text-white">
               <li>
                 <div>
-                <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:hidden"/>
-                <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:block"/>
+                  <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:hidden"/>
+                  <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:block"/>
                 </div>
               </li>
             </ul>
@@ -125,9 +124,29 @@ export default function Home() {
             {/* Fill projects and work in here */}
           </div>
         </section>
+
+        <section>
+          <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-20 py-3 dark:text-teal-500">
+            <div className="underline  cursor-pointer">
+              <a href="#">
+                Home
+              </a>
+            </div>
+            <div className="underline cursor-pointer">
+              <a href="contact">
+                Contact Me
+              </a>
+            </div>
+            <div className="underline cursor-pointer">
+              <a href="resume">
+                Resume
+              </a>
+            </div>
+          </div>
+        </section>
         
         <section>
-          <div className="flex justify-center gap-16 py-3 text-gray-600 text-3xl mb-5 dark:text-slate-300">
+          <div className="flex justify-center gap-16 py-3 text-gray-600 text-3xl mt-5 dark:text-slate-300">
             <a href="https://www.linkedin.com/in/sam-woodhams-58334a1b1/">
               <BsLinkedin className="cursor-pointer"/>
             </a>
