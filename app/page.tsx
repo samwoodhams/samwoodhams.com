@@ -3,7 +3,7 @@
 import React from 'react'
 import TypeMe, { Delete } from 'react-typeme'
 import Image from 'next/image'
-import face from '../public/image/face.png'
+import face from '../public/images/face.png'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
 import { useState } from 'react'
