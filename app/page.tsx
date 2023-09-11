@@ -61,7 +61,7 @@ export default function Home() {
               During my journey into the world of computer science and cyber security I&apos;ve acquired valuable skills, become proficient with essential tools, and gained practical experience in this ever-evolving field. Below, you&apos;ll discover the expertise I can offer, the tools I&apos;m well-versed in, and some of the exciting fields I&apos;ve had the opportunity to work in.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
-              For more information, here is a link to my <a className="text-teal-500" href="#">resume</a>
+              For more information, here is a link to my <a className="text-teal-500" href="/resume">resume</a>
             </p>
           </div>
           <div className="lg:flex gap-10">
