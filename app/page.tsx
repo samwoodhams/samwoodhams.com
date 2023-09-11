@@ -1,6 +1,7 @@
 "use client"
 
 import React from 'react'
+import Link from 'next/link'
 import TypeMe, { Delete } from 'react-typeme'
 import Image from 'next/image'
 import face from '../public/images/face.png'
@@ -61,7 +62,7 @@ export default function Home() {
               During my journey into the world of computer science and cyber security I&apos;ve acquired valuable skills, become proficient with essential tools, and gained practical experience in this ever-evolving field. Below, you&apos;ll discover the expertise I can offer, the tools I&apos;m well-versed in, and some of the exciting fields I&apos;ve had the opportunity to work in.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
-              For more information, here is a link to my <a className="text-teal-500" href="/resume">resume</a>
+              For more information, here is a link to my <Link className="text-teal-500" href="/resume">resume</Link>
             </p>
           </div>
           <div className="lg:flex gap-10">
@@ -149,19 +150,19 @@ export default function Home() {
         <section>
           <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-20 py-3 dark:text-teal-500">
             <div className="underline  cursor-pointer">
-              <a className="px-2 underline cursor-pointer" href="#">
+              <Link className="px-2" href="#">
                 Home
-              </a>
+              </Link>
             </div>
             <div className="underline cursor-pointer">
-              <a href="contact">
+              <Link href="/contact">
                 Contact Me
-              </a>
+              </Link>
             </div>
             <div className="underline cursor-pointer">
-              <a href="resume">
+              <Link href="/resume">
                 Resume
-              </a>
+              </Link>
             </div>
           </div>
         </section>
