@@ -1,12 +1,14 @@
 "use client"
 
 import React from 'react'
-import TypeMe, { Delete, Delay } from 'react-typeme'
+import TypeMe, { Delete } from 'react-typeme'
 import Image from 'next/image'
 import face from '../public/face.png'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
 import { useState } from 'react'
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false)
@@ -38,13 +40,13 @@ export default function Home() {
               backspaceDelay="1500"
               strings={[
                 'Computer Science Student',
-                <Delete />,
+                <Delete key={1}/>,
                 'Cybersecurity Enthusiast',
-                <Delete />,
+                <Delete key={2}/>,
                 'Developer',
-                <Delete />,
+                <Delete key={3}/>,
                 'Nerd',
-                <Delete />,
+                <Delete key={4}/>,
               ]}
             />
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-slate-300">
