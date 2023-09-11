@@ -1,6 +1,5 @@
 "use client"
 
-import React from 'react'
 import Link from 'next/link'
 import TypeMe, { Delete } from 'react-typeme'
 import Image from 'next/image'
@@ -11,7 +10,9 @@ import { useState } from 'react'
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+  {/* DOESN'T WORK, ReferenceError: window is not defined
+  const [darkMode, setDarkMode] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) */}
+  const [darkMode, setDarkMode] = useState(false)
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
@@ -148,7 +149,7 @@ export default function Home() {
         </section>
 
         <section>
-          <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-20 py-3 dark:text-teal-500">
+          <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-10 py-3 dark:text-teal-500">
             <div className="underline  cursor-pointer">
               <Link className="px-2" href="#">
                 Home
@@ -188,9 +189,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-    
   )
 }
-
-// Contact me page
-// Resume
