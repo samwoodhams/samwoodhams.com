@@ -100,22 +100,22 @@ export default function Home() {
               A list of some of the <span className="text-teal-500">cool</span> and <span className="text-teal-500">exciting</span> things that I&apos;ve been working on.
           </p>
           </div>
-          <div className="basis-1/3 gap-10 flex flex-wrap">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
+          <div className="basis-1/3 gap-10 flex flex-wrap mb-20">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-300">An Example project that I completed...</p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-700">
+            <div className="text-center shadow-lg p-10 rounded-xl flex-1 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">Example project</h3>
               <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
                 <BsGithub className="cursor-pointer"/>
@@ -142,7 +142,7 @@ export default function Home() {
 
         <section>
           <div className="flex justify-center py-3 dark:text-slate-300">
-            <p>© All rights reserved - Samuel Woodhams 2023</p>
+            <p className="text-xs md:text-sm">© All rights reserved - Samuel Woodhams 2023</p>
           </div>
         </section>
       </main>
