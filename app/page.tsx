@@ -43,7 +43,7 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 text-slate-600 dark:text-white">My Experience</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
-              During my journey into the world of computer science and cyber security I've acquired valuable skills, become proficient with essential tools, and gained practical experience in this ever-evolving field. Below, you'll discover the expertise I can offer, the tools I'm well-versed in, and some of the exciting fields I've had the opportunity to work in.
+              During my journey into the world of computer science and cyber security I&apos;ve acquired valuable skills, become proficient with essential tools, and gained practical experience in this ever-evolving field. Below, you&apos;ll discover the expertise I can offer, the tools I&apos;m well-versed in, and some of the exciting fields I&apos;ve had the opportunity to work in.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-slate-300">
               For more information, here is a link to my <a className="text-teal-500" href="#">resume</a>
@@ -136,5 +136,4 @@ export default function Home() {
 }
 
 // Contact me page
-// Things I found interesting page
 // Resume
