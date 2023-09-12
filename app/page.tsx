@@ -173,7 +173,7 @@ export default function Home() {
             <a href="https://www.linkedin.com/in/sam-woodhams-58334a1b1/">
               <BsLinkedin className="cursor-pointer"/>
             </a>
-            <a href="#">
+            <a href="mailto:samuel.woodhams@proton.me?subject=Contact%20Me">
               <BiLogoGmail className="cursor-pointer"/>
             </a>
             <a href="https://github.com/samwoodhams">
