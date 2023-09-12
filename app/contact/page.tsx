@@ -4,12 +4,14 @@ import Link from 'next/link'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
 import { useState } from 'react'
+import { useTheme } from 'next-themes'
 
 
 export default function Contact() {
-  const [darkMode, setDarkMode] = useState(false)
+  const {theme, setTheme } = useTheme()
+
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
         <section className="flex flex-col h-screen justify-between">
           <nav className="py-10 mb-12 flex justify-between">
@@ -18,10 +20,9 @@ export default function Contact() {
             </Link>
             <ul className="flex items-center dark:text-white">
               <li>
-                <div>
-                  <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:hidden"/>
-                  <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:block"/>
-                </div>
+                <button className="cursor-pointer text-2xl" onClick={()=> setTheme( theme === "dark"? "light": "dark" )}>
+                  { theme === "dark" ? <BsFillSunFill/>: <BsFillMoonFill/> }
+                </button>
               </li>
             </ul>
           </nav>
@@ -40,6 +41,7 @@ export default function Contact() {
               <BsGithub className="cursor-pointer"/>
             </a>
           </div>
+
           <footer>
             <div className="flex justify-center text-center underline-offset-4 text-slate-600 font-bold gap-10 py-3 dark:text-teal-500">
               <div className="underline cursor-pointer">

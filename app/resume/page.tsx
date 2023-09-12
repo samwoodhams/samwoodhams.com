@@ -5,6 +5,7 @@ import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons
 import { BiLogoGmail } from 'react-icons/bi'
 import { useState } from 'react'
 
+
 export default function Resume() {
   const [darkMode, setDarkMode] = useState(false)
   return (
@@ -27,7 +28,7 @@ export default function Resume() {
 
           <div>
             <div className="my-10">
-              <h3 className="text-3xl py-1 md:text-4xl text-slate-600 dark:text-white">Education</h3>
+              <h3 className="text-3xl py-1 md:text-4xl mb-2 text-slate-600 dark:text-teal-400">Education</h3>
               <div className="flex pb-2 text-sm md:text-lg text-gray-800 dark:text-slate-300">
                 <table className="table-fixed w-full">
                   <tbody>
@@ -41,7 +42,7 @@ export default function Resume() {
             </div>
             
             <div className="my-10">
-              <h3 className="text-3xl py-1 md:text-4xl text-slate-600 dark:text-white">Experience</h3>
+              <h3 className="text-3xl py-1 md:text-4xl mb-2 text-slate-600 dark:text-teal-400">Experience</h3>
               <div className="flex pb-2 text-sm md:text-lg text-gray-800 dark:text-slate-300">
                 <table className="table-fixed w-full">
                   <tbody>
@@ -79,12 +80,12 @@ export default function Resume() {
                 </Link>
               </div>
               <div className="underline cursor-pointer">
-                <Link href="#">
+                <Link href="/contact">
                   Contact Me
                 </Link>
               </div>
               <div className="underline cursor-pointer">
-                <Link href="/resume">
+                <Link href="#">
                   Resume
                 </Link>
               </div>

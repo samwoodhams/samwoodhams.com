@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  color: #000;
+  background: #fff;
+}
+
+[data-theme='dark'],
+[data-theme='dark'] body {
+  color: orange;
+  background: #000;
+}
+
 @layer components {
   .disable-blur {
     image-rendering: pixelated;
