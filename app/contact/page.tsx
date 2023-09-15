@@ -1,15 +1,11 @@
-"use client"
-
 import Link from 'next/link'
-import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useTheme } from 'next-themes'
+import { ThemeSwitcher } from '../components/ThemeSwitcher'
 
 
 export default function Contact() {
-  const {theme, setTheme } = useTheme()
-
-  return (
+return (
     <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
         <section className="flex flex-col h-screen justify-between">
@@ -19,9 +15,7 @@ export default function Contact() {
             </Link>
             <ul className="flex items-center dark:text-white">
               <li>
-                <button className="cursor-pointer text-2xl" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                  { theme === "dark" ? <BsFillSunFill/>: <BsFillMoonFill/> }
-                </button>
+                <ThemeSwitcher />
               </li>
             </ul>
           </nav>

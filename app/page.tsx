@@ -1,18 +1,14 @@
-"use client"
-
 import Link from 'next/link'
-import TypeMe, { Delete } from 'react-typeme'
 import Image from 'next/image'
 import face from '../public/images/face.png'
-import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useTheme } from 'next-themes'
+import { ThemeSwitcher } from './components/ThemeSwitcher'
+import { TypingEffect } from './components/TypingEffect'
 
 
 export default function Home() {
-  const {theme, setTheme } = useTheme()
-
-  return (
+return (
     <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
         <section className="min-h-screen">
@@ -22,9 +18,7 @@ export default function Home() {
             </a>
             <ul className="flex items-center dark:text-white">
               <li>
-                <button className="cursor-pointer text-2xl" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                  { theme === "dark" ? <BsFillSunFill/>: <BsFillMoonFill/> }
-                </button>
+                <ThemeSwitcher />
               </li>
             </ul>
           </nav>
@@ -33,21 +27,7 @@ export default function Home() {
           </div>
           <div className="text-center p-10">
             <h2 className="text-4xl py-2 text-slate-600 font-medium md:text-6xl dark:text-teal-400">Samuel Woodhams</h2>
-            <TypeMe className="text-xl py-2 md:text-3xl dark:text-slate-300"
-              typingSpeed="200"
-              loop
-              backspaceDelay="1500"
-              strings={[
-                'Computer Science Student',
-                <Delete key={1}/>,
-                'Cybersecurity Enthusiast',
-                <Delete key={2}/>,
-                'Developer',
-                <Delete key={3}/>,
-                'Nerd',
-                <Delete key={4}/>,
-              ]}
-            />
+            <TypingEffect />
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-slate-300">
               An undergraduate student currently studying computer science at the University of Warwick.
             </p>
