@@ -82,7 +82,7 @@ return (
           <div className="gap-10 flex flex-wrap my-10 justify-center">
             <div className="text-center shadow-lg p-10 rounded-xl flex-auto min-w-1/4 md:w-1/4 dark:bg-gray-700">
               <h3 className="font-bold text-slate-600 text-xl dark:text-teal-300 mb-6">This Website</h3>
-              <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams">
+              <a className="flex justify-center text-gray-600 text-3xl mb-3 dark:text-slate-100" href="https://github.com/samwoodhams/samwoodhams.com">
                 <BsGithub className="cursor-pointer"/>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-300">I created this website using <span className="text-teal-500">Next.js</span> and <span className="text-teal-500">tailwindcss</span> to teach my self web-development and to have a personal portfolio website to show off</p>
