@@ -4,15 +4,42 @@
 
 html,
 body {
-  color: #000;
-  background: #fff;
+  color: black;
 }
-
 [data-theme='dark'],
 [data-theme='dark'] body {
   color: orange;
-  background: #000;
 }
+
+/*
+html,
+main {
+  background: #fff;
+}
+h2 {
+  color: #475569;
+}
+body {
+  color: #475569;
+}
+p {
+  color: #1f2937;
+}
+
+[data-theme='dark'],
+[data-theme='dark'] main {
+  background: #2d3748;
+}
+[data-theme='dark'] h2 {
+  color: #2dd4bf;
+}
+[data-theme='dark'] body {
+  color: #fff;
+}
+[data-theme='dark'] p {
+  color: #cbd5e1;
+}
+*/
 
 @layer components {
   .disable-blur {

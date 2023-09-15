@@ -6,15 +6,14 @@ import Image from 'next/image'
 import face from '../public/images/face.png'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useState } from 'react'
+import { useTheme } from 'next-themes'
 
 
 export default function Home() {
-  {/* DOESN'T WORK, ReferenceError: window is not defined
-  const [darkMode, setDarkMode] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) */}
-  const [darkMode, setDarkMode] = useState(false)
+  const {theme, setTheme } = useTheme()
+
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
@@ -23,10 +22,9 @@ export default function Home() {
             </a>
             <ul className="flex items-center dark:text-white">
               <li>
-                <div>
-                  <BsFillMoonFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:hidden"/>
-                  <BsFillSunFill onClick={() => setDarkMode(!darkMode)} className="hidden cursor-pointer text-2xl dark:block"/>
-                </div>
+                <button className="cursor-pointer text-2xl" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                  { theme === "dark" ? <BsFillSunFill/>: <BsFillMoonFill/> }
+                </button>
               </li>
             </ul>
           </nav>

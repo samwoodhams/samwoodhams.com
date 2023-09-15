@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { BsFillMoonFill, BsFillSunFill, BsLinkedin, BsGithub } from 'react-icons/bs'
 import { BiLogoGmail } from 'react-icons/bi'
-import { useState } from 'react'
 import { useTheme } from 'next-themes'
 
 
@@ -20,7 +19,7 @@ export default function Contact() {
             </Link>
             <ul className="flex items-center dark:text-white">
               <li>
-                <button className="cursor-pointer text-2xl" onClick={()=> setTheme( theme === "dark"? "light": "dark" )}>
+                <button className="cursor-pointer text-2xl" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                   { theme === "dark" ? <BsFillSunFill/>: <BsFillMoonFill/> }
                 </button>
               </li>
