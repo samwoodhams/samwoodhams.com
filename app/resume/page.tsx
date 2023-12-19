@@ -42,12 +42,17 @@ return (
                   <tbody>
                     <tr>
                       <td className="align-top font-semibold">Jun 2021</td>
-                      <td className="py-2 md:py-4">Gained work experience with the head of online banking at Barclays specifically looking at cryptocurrencies and digital transactions and their implications for the world of banking</td>
+                      <td className="py-2 md:py-4">Gained work experience with the head of online banking at Barclays specifically looking at cryptocurrencies and digital transactions and their implications for the world of banking.</td>
                     </tr>
                     <tr>
-                      <td className="align-top font-semibold">Jun 2020</td>
-                      <td className="py-2 md:py-4">Young Professionals work experience program</td>
+                      <td className="align-top font-semibold">Jun 2021</td>
+                      <td className="py-2 md:py-4">Completed a research project related to the impact of Covid-19 on brick and mortar retailers vs online retailers.</td>
                     </tr>
+                    <tr>
+                      <td className="align-top font-semibold">Jun 2021</td>
+                      <td className="py-2 md:py-4">Completed the SANS Foundations Course</td>
+                    </tr>
+
                   </tbody>
                 </table> 
               </div>
