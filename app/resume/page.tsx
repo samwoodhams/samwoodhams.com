@@ -28,7 +28,7 @@ return (
                   <tbody>
                     <tr>
                       <td className="align-top font-semibold">2022 - Now</td>
-                      <td>BSc Computer Science, University of Warwick</td>
+                      <td>MEng Computer Science, University of Warwick</td>
                     </tr>
                   </tbody>
                 </table>
